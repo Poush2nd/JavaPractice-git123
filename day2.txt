@@ -1,0 +1,57 @@
+package one;
+
+public class Day2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		calA(2,8);
+		calA(6,24);
+		calA(5,15);
+		
+		add();
+		add();
+		add();
+		add();
+		
+		int A = calC(20, 4);
+		System.out.println(A);
+		System.out.println(A+A);
+		System.out.println(A-14);
+		System.out.println(A*4);
+		
+	}	
+	
+	//function with parameter and without return type
+	
+    public static void calA(int X, int Y) {
+    	       
+		System.out.println(X+Y);
+		System.out.println(X-Y);
+		System.out.println(X*Y);
+		System.out.println(X/Y);
+		System.out.println(X%Y);
+    }
+	//function without parameter and without return type
+		
+		public static void add() {
+			
+		System.out.println(12+5);
+        System.out.println(8+4);
+		}
+		
+//function with parameter and with return type
+		
+		public static int calC(int X, int Y) {
+			System.out.println(X + Y);
+		       return X+ Y;
+		    		   
+		}
+			//with parameter & with return type more revision
+		
+
+		
+		
+		
+		}
+		
