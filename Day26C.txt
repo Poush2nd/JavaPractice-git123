@@ -1,0 +1,63 @@
+package one;
+
+interface Country{
+	public void methodCountry();
+	
+}
+
+interface States{
+	public void methodStates();
+	
+}
+
+interface City{
+	public void methodCity();
+	
+	
+}
+
+public class Day26C {
+
+	public static void main(String[] args) {
+		
+		C4 objC = new C4();
+		objC.methodB();
+		objC.methodB1();
+		objC.methodCountry();
+		objC.methodStates();
+
+	}
+
+}
+
+class B4 {
+	public void methodB() {
+		System.out.println("this is the first method for class B");
+		
+	}
+	
+	public void methodB1() {
+		System.out.println("this is the second method for class B");
+	}
+	
+		
+	}
+
+
+
+class C4 extends B4 implements Country, States {
+
+	
+	public void methodStates() {
+		System.out.println("all States includes people from different race");
+	}
+	
+	public void methodCountry() {
+		System.out.println(" this Country has good currency value");
+		
+		
+	}
+	
+}
+
+

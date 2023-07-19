@@ -1,0 +1,57 @@
+package one;
+
+interface companyA{
+	public void profit() ;
+	public void loss();
+	
+		
+	}
+
+interface CompanyB{
+	public void displayProduct();
+	public void displayBranch();
+}
+
+public class Day26B {
+
+	public static void main(String[] args) {
+		
+ CompanyC wholefoods = new CompanyC();
+ wholefoods.displayBranch();
+ wholefoods.displayProduct();
+ wholefoods.profit();
+ wholefoods.loss();
+ 
+		
+	}
+
+}
+//more than one interface can be implemented by the class
+
+class CompanyC implements companyA,CompanyB {
+
+	
+	public void displayProduct() {
+		System.out.println("product is organicfood");
+		
+	}
+
+	
+	public void displayBranch() {
+		System.out.println("located at Dallas TX");
+		
+	}
+
+	
+	public void profit() {
+	 System.out.println("company is at profit");
+		
+	}
+
+	
+	public void loss() {
+		System.out.println("no loss tilldate");
+		
+	}
+	
+}
