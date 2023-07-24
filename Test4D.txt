@@ -1,0 +1,63 @@
+package one;
+//interface
+
+interface WorldbankR{
+	public void save(int x);
+	public void loan(int y);
+	
+}
+
+
+public class Test4D {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		ChaseT US = new ChaseT();
+		US.save(0);
+		US.loan(0);
+		
+		
+		Americanexpress States = new Americanexpress() ;
+		States.save(0);
+		States.loan(0);
+			
+		
+
+	}
+
+}
+
+class ChaseT implements WorldbankR{
+
+	
+	public void save(int x) {
+		System.out.println("i am save from Chase2");
+		
+	}
+
+	
+	public void loan(int y) {
+		System.out.println("i am loan from Chase2");
+		
+	}
+	
+}
+
+class AmericanexpressZ implements WorldbankR{
+
+	
+	public void save(int x) {
+		System.out.println("i am save from Americanexpress");
+		
+	}
+
+	
+	public void loan(int y) {
+		System.out.println("i am loan from Americanexpress");
+		
+	}
+	
+}
+

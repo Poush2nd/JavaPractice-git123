@@ -1,0 +1,64 @@
+
+public class Test4B {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	// Program for Abstract
+
+		ChaseZ T = new ChaseZ();
+		
+		T.loan();
+	    T.save();
+	    T.displayCountry();
+		T.branchName();
+
+	}
+	
+	
+
+}
+
+abstract class WorldBankZ {
+	
+	
+	abstract void loan();
+	abstract void save();
+	public void displayCountry() {
+		System.out.println("Banks from USA");
+	}
+	
+}
+
+
+
+class ChaseZ extends WorldBankZ {
+	
+	public void loan() {
+		System.out.println("I am loan from chase");
+	}
+	public void save() {
+		System.out.println("I am save chase");
+	}
+	
+	public void branchName() {
+		System.out.println("chase from texas");
+	}
+
+}
+
+class WellsFargoZ extends  WorldBankZ {
+	
+	public void loan() {
+		System.out.println("I am loan from Wellsfargo");
+	}
+	public void save() {
+		System.out.println("I am save from Wellsfargo");
+	}
+	
+	public void branchName() {
+		System.out.println("wellsfargo from AZ");
+	}
+	
+}
+	

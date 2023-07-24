@@ -1,0 +1,84 @@
+
+public class Test4C {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+// Program for overriding
+
+
+ Chase texas = new Chase("usa", "texas");
+ texas.loan();
+ texas.save();
+ texas.displayMessage();
+
+  }
+ }
+
+ class WorldBankP{
+ String country;
+
+  public WorldBankP(String cnt) {
+  this.country = cnt;
+  }
+
+  public void save() {
+   System.out.println("good interest rate available on personal saving");
+
+ }
+
+ public void loan() {
+  System.out.println("this is loan method from WorldBank");
+ }
+
+  public void displayMessage() {
+	System.out.println("Welcome to the WorldBank");
+  }
+
+ }
+
+  class WellsFargoP extends WorldBankP {
+  String branchName;
+
+  public WellsFargoP(String cnt, String bn) {
+	super(cnt);
+	this.branchName = bn;
+}
+
+
+
+  public void save() {
+	System.out.println("i am save from WellsFargo texas ");
+	
+    }
+
+   public void loan() {
+	System.out.println("this is  loan from WellsFargo texas ");
+   }
+}
+
+  class ChaseP extends WorldBankP {
+	String branchName;
+	
+	public ChaseP(String cnt, String bn) {
+		super(cnt);
+		this.branchName = bn;
+		
+		}
+	
+	
+	public void save() {
+		System.out.println("this is save from Chase texas ");
+		
+		}	
+	public void loan() {
+		System.out.println("this is loan from Chase texas");
+	}
+	
+
+
+
+
+
+}

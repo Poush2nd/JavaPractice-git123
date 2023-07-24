@@ -1,0 +1,46 @@
+
+public class Test4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class FatherZ{
+	String FirstName;
+	String LastName;
+	int age;
+	public FatherZ(String fn, String ln, int ag) {
+		this.FirstName = fn;
+		this.LastName = ln;
+		this.age = ag;
+		
+	}
+		
+		public void DisplayFullName() {
+			System.out.println(this.FirstName + this.LastName);
+			
+		}
+	}
+  class SonZ extends FatherZ{
+	 
+	  String SName;
+	  int age;
+	  
+  public SonZ(String fn, String ln, int ag) {
+		super(fn, ln, ag);
+		this.age = ag;
+	
+  }
+	  
+
+		
+		
+		
+	}
+	
+	  
+
+

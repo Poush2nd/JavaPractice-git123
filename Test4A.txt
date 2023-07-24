@@ -1,0 +1,36 @@
+
+public class Test4A {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		// Program for overloading
+		
+		
+
+		CalculatorP T = new CalculatorP();
+		T.add(12,10);
+		T.add(12,10,5);
+		T.add(12,10,5,4);
+	}
+
+}
+
+class CalculatorP {
+
+	public void add(int x, int y) {
+		System.out.println(x + y);
+	}
+
+	public void add(int x, int y, int z) {
+		System.out.println(x + y + z);
+	}
+
+	public void add(int x, int y, int z, int a) {
+		System.out.println(x + y + z + a);
+	}
+
+}
+
+
