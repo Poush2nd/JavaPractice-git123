@@ -1,0 +1,61 @@
+package one;
+
+import java.util.HashMap;
+
+public class Day33 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+ HashMap<String,Integer>	Students = new HashMap<>();
+
+ Students.put("Sikshya",21);
+ Students.put("Geeta", 32);
+ Students.put("Shruti",38);
+ Students.put("Hari",45);
+ Students.put("Krishna",25);
+ 
+ 
+ //Accessing the value from HashMap
+ 
+ int p = Students.get("Geeta");
+ System.out.println(p);
+		
+		
+	//Check particular key exists	
+		
+		boolean x = Students.containsKey("Shruti");
+		System.out.println(x);
+		
+		
+	//total number of key value in HashMap()
+		
+		int k = Students.size();
+		System.out.println(k);
+		
+	//remove the value
+		
+		Students.remove("Geeta");
+		System.out.println(Students);
+		
+		
+		//update the value
+		
+		Students.put("Hari",22);
+		System.out.println(Students);
+		
+		
+		
+		//looping through HashMap
+		
+		for (String M :Students.keySet()) {
+			System.out.println(M);
+		}
+		
+		for(int N : Students.values()) {
+			System.out.println(N);
+		}
+		
+	}
+
+}

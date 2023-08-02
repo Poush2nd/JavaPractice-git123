@@ -1,0 +1,25 @@
+let names = ["Garima", "Pokharel",32,44]
+let info = {"firstName":"Garima",
+            "lastName":"Pokharel",
+            "age":"32",
+            "rollNo":44 }
+console.log(info.firstName)
+console.log(info['firstName'])
+
+//for add
+info.city = "Dallas"
+info.language = "English"
+console.log(info)
+
+//for update
+
+info.city = "Plano"
+info.language = "Spanish"
+console.log(info)
+
+//for delete
+
+delete info.city
+delete info['language']
+console.log(info)
+
