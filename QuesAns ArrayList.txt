@@ -1,0 +1,74 @@
+package one;
+
+import java.util.ArrayList;
+
+
+public class QuesAns3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Define a array list and loop over it
+		//Defined a hashmap and loop over it	
+		
+		PersonI Richa = new PersonI("Richa", "Agrawal");
+		PersonI Sachi = new PersonI("Sachi", "Sharma");
+		PersonI Ravi = new PersonI("Ravi", "Jain");
+		
+		ArrayList<PersonI> employees = new ArrayList<>();
+		
+		employees.add(Richa);
+		employees.add(Sachi);
+		employees.add(Ravi);
+		
+		employees.get(0).displayFullName();
+		
+		//for loop
+		
+		for(int i=0; i<employees.size(); i++) {
+			System.out.println(employees.get(i).FirstName);
+			System.out.println(employees.get(i).LastName);
+			
+			employees.get(i).displayFullName();
+		}
+		
+		//while loop
+		
+		int j = 0;
+		while(j<employees.size()) {
+			System.out.println(employees.get(j).FirstName);
+			System.out.println(employees.get(j).LastName);
+			j++ ;
+			
+			
+		}
+		
+		//for each
+		
+		for(PersonI E : employees) {
+			System.out.println(E.FirstName);
+			System.out.println(E.LastName);
+			
+		}
+		
+	}
+
+}
+
+ class PersonI {
+	 String FirstName;
+	 String LastName;
+	 
+	 public PersonI(String fn, String ln) {
+	 this.FirstName = fn;
+	 this.LastName = ln;
+	 }
+	 
+	 public void displayFullName() {
+		 System.out.println(this.FirstName + this.LastName);
+	 }
+ }
+
+ 
+
+

@@ -1,0 +1,35 @@
+package one;
+
+import java.util.HashMap;
+
+
+
+public class QuesAns {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		//Defined a hashmap and loop over it
+		
+		 HashMap<String,String>	Vehicle = new HashMap<>();
+
+		 Vehicle.put("Dodge","Dart");
+		 Vehicle.put("Toyota","Camry");
+		 Vehicle.put("KIA","Telluride");	
+		 System.out.println(Vehicle);
+				
+				
+				//looping through HashMap
+				
+				for (String M :Vehicle.keySet()) {
+					System.out.println(M);
+				}
+				
+				for(String N: Vehicle.values()) {
+					System.out.println(N);
+				}
+				
+			}
+	
+	}// end class

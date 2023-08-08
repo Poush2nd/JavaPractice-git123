@@ -1,61 +1,34 @@
-package one;
+1 SELECT * FROM patients where not city = 'Hamilton'
 
-import java.util.HashMap;
+2 SELECT * FROM patients where city = 'Hamilton'
 
-public class Day33 {
+ order by first_name 
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+3 SELECT * FROM patients where city = 'Hamilton'
 
- HashMap<String,Integer>	Students = new HashMap<>();
+  order by first_name , last_name
 
- Students.put("Sikshya",21);
- Students.put("Geeta", 32);
- Students.put("Shruti",38);
- Students.put("Hari",45);
- Students.put("Krishna",25);
- 
- 
- //Accessing the value from HashMap
- 
- int p = Students.get("Geeta");
- System.out.println(p);
-		
-		
-	//Check particular key exists	
-		
-		boolean x = Students.containsKey("Shruti");
-		System.out.println(x);
-		
-		
-	//total number of key value in HashMap()
-		
-		int k = Students.size();
-		System.out.println(k);
-		
-	//remove the value
-		
-		Students.remove("Geeta");
-		System.out.println(Students);
-		
-		
-		//update the value
-		
-		Students.put("Hari",22);
-		System.out.println(Students);
-		
-		
-		
-		//looping through HashMap
-		
-		for (String M :Students.keySet()) {
-			System.out.println(M);
-		}
-		
-		for(int N : Students.values()) {
-			System.out.println(N);
-		}
-		
-	}
+4  SELECT * FROM patients where first_name like 'C%'
 
-}
+5  SELECT * FROM patients where first_name like '%C' (names that ends with C vaneko)
+
+6  SELECT * FROM patients where first_name like 'C%C'(name starts with & ends with C)
+
+7 SELECT * FROM patients where first_name like 'C%A' (name starts with C & ends with a)
+
+8 SELECT * FROM patients where first_name like '%C%' (includes c anywhere in the name)
+
+9 SELECT * FROM patients where first_name like '_C%' (c at second place)
+
+10 SELECT * FROM patients where first_name like '__C%' (c at third place)
+
+11 SELECT * FROM patients where first_name like '%C_' (second last character should be c)
+
+12 SELECT * FROM patients where first_name like '%C__' (third last character should be c)
+
+13 SELECT * FROM patients where first_name like '%ER%' ( first name that has er anywhere in between)
+
+14 SELECT * FROM patients where province_id ='NS' or patient_id = 'SK'
+
+15 SELECT * FROM patients where province_id IN ('NS', 'SK', 'MB')
+
