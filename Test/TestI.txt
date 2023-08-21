@@ -1,0 +1,25 @@
+package one;
+
+public class TestI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	// 1 Define a multidimensional array and loop using forEach	
+		
+		int [] [] numberI = {
+				{11, 22, 33},
+				{10, 20, 30},
+				{6, 9, 12}
+			  };
+		
+		for (int [] row : numberI) {
+		for(int col : row) {
+			System.out.println(col);
+		}
+		
+		
+	}
+
+	}}
+

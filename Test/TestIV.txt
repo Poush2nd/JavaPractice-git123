@@ -1,0 +1,51 @@
+public class TestIV {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Example of overriding
+		
+	WellsFargoF bank = new WellsFargoF("USA", "Texas");	
+	System.out.println(bank.BranchName);
+	System.out.println(bank.Country);
+	bank.loan();
+	bank.save();
+	
+	}
+
+}
+ class WorldBankW {
+	 String Country;
+	 
+	 public WorldBankW(String c) {
+	 this.Country = c;
+ }
+	 public void save () {
+		 System.out.println("good interest rate available on saving");
+	 }
+	 
+	 public void loan () {
+		 System.out.println("this is loan method from Worldbank");
+	 }
+ }
+   class WellsFargoF extends WorldBankW {
+	   String BranchName;
+	   
+	   public WellsFargoF(String c, String bn) {
+		super(c);
+		this.BranchName = bn;
+	}
+	   
+   public void save () {
+	   System.out.println("Save method from WF");
+   }
+   
+   public void loan () {
+	   System.out.println("Loan method from wf");   
+	   
+   }
+	
+	   
+   }
+ 
+ 

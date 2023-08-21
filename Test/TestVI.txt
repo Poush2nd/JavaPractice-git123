@@ -1,0 +1,32 @@
+package one;
+
+public class TestVI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+  //Define a class for Singleton Pattern
+		
+		DatabaseI d = DatabaseI.getInstance();
+		d.getconnection();
+		
+	}
+
+}
+
+class DatabaseI {
+	private static DatabaseI dbobject = null;
+	private DatabaseI () {
+	}
+	
+	public static DatabaseI getInstance() {
+		if(dbobject == null) {
+			dbobject = new DatabaseI();
+		}
+		return dbobject;
+	}
+	
+	public void getconnection() {
+		System.out.println("Connected to database");
+	}
+	}

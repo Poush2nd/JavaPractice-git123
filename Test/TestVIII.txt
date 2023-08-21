@@ -1,0 +1,42 @@
+package one;
+
+enum size{
+	small, medium, large
+}
+ 
+class order {
+	size Tshirt;
+	public order(size ts) {
+		this.Tshirt = ts;
+		
+	}
+	public void OrderConfirmation() {
+		switch(Tshirt) {
+		case small:
+			System.out.println("order for small size tshirt");
+			break;
+		case medium:
+			System.out.println("order for medium size tshirt");
+			break;
+		case large:
+			System.out.println("order for large size tshirt");
+			break;	
+		}
+		
+	}
+}
+
+
+
+public class TestVIII {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Define a enum with example
+		
+		order O = new order (size.small);
+		O.OrderConfirmation();
+	}
+
+}

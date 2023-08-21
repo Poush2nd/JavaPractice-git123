@@ -1,0 +1,24 @@
+1 Show Order ID, Order Date, Employee ID for orders handled by Employee
+ of North America Region
+
+Hint: */Table: employees  and Orders*/
+
+
+SELECT o.order_id,region,
+o.order_date,
+o.employee_id FROM orders o
+join employees e on e.employee_id = o.employee_id
+where e.region='North America'
+
+
+2  Show the category_name, Product name,  and the product unit price 
+
+
+  */ Table: Categories and Products
+  */
+
+
+  SELECT c.category_name,
+p.product_name,
+p.unit_price   FROM products P
+join categories C on P.category_id=c.category_id

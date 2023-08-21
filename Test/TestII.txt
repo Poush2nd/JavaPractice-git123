@@ -1,0 +1,44 @@
+package one;
+
+public class TestII {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Define two class with inheritance
+		
+	sonP S = new sonP("Hari", "Sharma", "Ram") ;
+		System.out.println(S.Firstname);
+	System.out.println(S.Lastname);
+	System.out.println(S.SFirstname);
+	S.DisplayFname();
+	S.DispalySname();
+	
+	}
+		}
+
+ class FatherD {
+	 String Firstname;
+	 String Lastname;
+	 
+	 public FatherD(String fn, String ln) {
+		 this.Firstname = fn;
+		 this.Lastname = ln;
+		 }
+	 public void DisplayFname() {
+		 System.out.println(this.Firstname +" " + this.Lastname);
+	 }
+ } 
+ class sonP extends FatherD{
+	 String SFirstname; 
+	 
+	 public sonP(String fn, String ln, String sfn) {
+		super(fn, ln);
+		this.SFirstname = sfn;
+	}
+  public void DispalySname() {
+	  System.out.println(this.SFirstname + ""+this.Lastname);
+  }
+	
+	 
+ }

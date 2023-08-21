@@ -1,0 +1,30 @@
+package one;
+
+import java.util.HashMap;
+
+public class TestX {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Define a HashMap and Loop over it
+
+		
+		HashMap<String, String> StudentO = new HashMap<>();
+		
+		StudentO.put("Rina", "Thapa");
+		StudentO.put("Priya", "Yadav");
+		StudentO.put("Hari", "Giri");
+		
+		//looping through HashMap
+		
+		for(String M : StudentO.keySet()) {
+			System.out.println(M);
+		}
+		for(String N : StudentO.values()) {
+			System.out.println(N);
+		}
+		
+	}
+
+}

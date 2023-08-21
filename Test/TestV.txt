@@ -1,0 +1,68 @@
+package one;
+
+  interface ITCourse {
+	  public void Courseone();
+	  public void Coursetwo();
+	  public void Coursethree();
+  }
+
+  class Infosis implements ITCourse{
+
+	@Override
+	public void Courseone() {
+		System.out.println("info one");
+		
+	}
+
+	@Override
+	public void Coursetwo() {
+		System.out.println("info two");
+		
+	}
+
+	@Override
+	public void Coursethree() {
+		System.out.println("info three");
+		
+	}
+	  }
+  
+  class Horizon implements ITCourse {
+
+	@Override
+	public void Courseone() {
+		System.out.println("one");
+		
+	}
+
+	@Override
+	public void Coursetwo() {
+		System.out.println("Two");
+		
+	}
+
+	@Override
+	public void Coursethree() {
+		System.out.println("Three");
+		
+	}
+	  
+  }
+  
+public class TestV {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+  //Define a Interface and implement via class
+		
+	ITCourse firm;
+	firm = new Infosis();
+	firm.Courseone();
+		
+		
+	firm = new Horizon();
+	firm.Coursethree();
+	}
+
+}

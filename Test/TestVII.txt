@@ -1,0 +1,36 @@
+package one;
+
+public class TestVII {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Define a class with abstract method and inherit via normal class
+		
+		Men M = new Men();
+		M.talk();
+		M.eat();
+	}
+
+}
+
+  abstract class HumanH{
+	  
+	abstract void talk();
+	
+	 public void eat() {
+		System.out.println("I eat healthy food");
+	}
+}
+
+   class Men extends  HumanH{
+	   
+	 public void talk() {
+		System.out.println("Hello");
+	
+	
+		
+		
+	}
+
+}

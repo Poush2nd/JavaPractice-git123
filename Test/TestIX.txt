@@ -1,0 +1,27 @@
+package one;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class TestIX {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Define a program to write a text file
+		
+		String MyBook = "MyBook.txt";
+		try {
+			FileWriter wr = new FileWriter(MyBook);
+			wr.write("I am a Student");
+			wr.write("I like music");
+			wr.write("I am learning Java");
+		} 
+		catch(IOException e) {
+			e.printStackTrace();
+			
+		}
+		
+	}
+
+}
