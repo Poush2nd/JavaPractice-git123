@@ -1,0 +1,37 @@
+package seleniumTutorials;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Select Orange a radio button and assert whether it is checked
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\TEMP\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
+
+		  ChromeDriver driver = new ChromeDriver();
+		  
+		  
+		  
+		  driver.get("https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
+		  
+		  WebElement Org = driver.findElement(By.cssSelector("#radio-buttons > input[type=radio]:nth-child(7)"));
+		  
+		  Org.click();
+		  boolean O = Org.isSelected();
+		  
+		  if(O == true) {
+			  System.out.println("Test case pass");
+		  }
+		  else {
+			  System.out.println("Test case failed");
+			  
+		  }
+		
+	}
+
+}

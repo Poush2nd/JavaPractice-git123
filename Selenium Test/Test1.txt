@@ -1,0 +1,35 @@
+package seleniumTutorials;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		// 1 validate title of page
+		
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\TEMP\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
+
+		  ChromeDriver driver = new ChromeDriver();
+		  
+		  driver.get("https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
+		  
+		  String Title = driver.getTitle();
+		  System.out.println(Title);
+				  
+		    if(Title.equals("WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)")) {
+		    	System.out.println("Test case pass");
+		    }
+		    	else {
+		    		System.out.println("Test case fail");
+		    		
+		    	
+		    }
+		
+		
+	}
+
+}

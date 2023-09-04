@@ -1,0 +1,31 @@
+package seleniumTutorials;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Validate the heading of the page
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\TEMP\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
+
+		  ChromeDriver driver = new ChromeDriver();
+		  
+		  driver.get("https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
+		  
+		  
+		  
+		  WebElement Header = driver.findElement(By.cssSelector("#main-header > h1"));
+		   
+		  String H = Header.getText();
+	          System.out.println(H);
+
+				    	
+		    }
+	
+	}
+
